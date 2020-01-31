@@ -1,0 +1,12 @@
+type Item  {
+    id: Int
+    price: Float
+    name: String
+    image:  String
+    valorTotal: Float
+}
+input InputFiltro {
+    id: Int
+    price: Float
+    name: String
+}

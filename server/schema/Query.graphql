@@ -1,0 +1,4 @@
+type Query { 
+    products(filtro: InputFiltro): [Item]
+    product(filtro: InputFiltro): Item
+}

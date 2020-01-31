@@ -1,5 +1,5 @@
 {
-  "name": "todo-cartoes-vue",
+  "name": "todo-cartoes-cliente",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,18 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "apollo-client": "^2.5.1",
+    "apollo-link-http": "^1.5.14",
+    "axios": "^0.19.1",
+    "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.2.2",
     "core-js": "^3.4.4",
-    "vue": "^2.6.10"
+    "font-awesome": "^4.7.0",
+    "graphql": "^14.6.0",
+    "graphql-tag": "^2.10.1",
+    "vue": "^2.6.11",
+    "vue-infinite-loading": "^2.4.4",
+    "vuex": "^3.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
@@ -29,7 +39,20 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "indent": [
+        "error",
+        "tab"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
