@@ -17,7 +17,7 @@
       :per-page="perPage"
       :current-page="currentPage"
       small
-    >  <template v-slot:cell(selected)="{ rowSelected }">
+    >  <template v-slot:cell(selecione)="{ rowSelected }">
         <template v-if="rowSelected">
           <span aria-hidden="true">&check;</span>
           <span class="sr-only">Selected</span>
@@ -27,7 +27,7 @@
           <span class="sr-only">Not selected</span>
         </template>
       </template> 
-      <template v-slot:cell(acao)="{ rowSelected }">
+      <template v-slot:cell(retirar)="{ rowSelected }">
         <p v-if="rowSelected"
          v-on:click="deleteItem(item)"
             size="sm"
@@ -54,7 +54,7 @@ export default {
 		return {
 			item:[],
 			modes: ["multi", "single"],
-			fields: ["selected", "acao", "name", "price", "id"],
+			fields: ["", "retirar", "name", "price", "id"],
 			perPage: 4,
 			currentPage: 1,
 			items: [

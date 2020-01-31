@@ -10,7 +10,6 @@
     </div>
     <div id="products" class="container" style="height: 930px; overflow-y: scroll;">
       <CardList></CardList>
-      <!-- <CardProduct></CardProduct> -->
     </div>
     <br/>
     <div class="container text-center">
@@ -33,7 +32,6 @@ export default {
 		CardProfile,
 		CardSearch,
 		ListaPedido,
-		//	CardProduct,
 		CardList,
 		Navs
 	},

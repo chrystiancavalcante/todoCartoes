@@ -21,7 +21,7 @@
               </div>
             </div>
             <h5 class="card-title">
-              <span class="badge badge-info" style="font-size:20px;">{{ }}</span> itens com o total de
+              <span class="badge badge-info" style="font-size:20px;">{{ items.length }}</span> itens com o total de
               <span class="badge badge-info" style="font-size:20px;">{{ }}</span>
             </h5>
             <button class="btn btn-lg btn-danger" @click="makeToast('success')">QUERO ESTA LISTA!</button>
@@ -54,6 +54,7 @@ export default {
 		}
 	},
 	computed: {
+		// eslint-disable-next-line vue/no-dupe-keys
 		items() {
 			return this.$store.state.products;
 		}
