@@ -1,6 +1,6 @@
 # todoCartoes
 Projeto  sendo desenvolvido em  Vue no front-end e Graphql e Apollo Server no back-end. 
-Ainda refatorando alguns componentes para melhor organização do projeto.
+Ainda refatorando alguns componentes para melhor organização e performace do projeto.
 
 
 
