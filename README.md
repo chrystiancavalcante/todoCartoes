@@ -22,4 +22,6 @@ cd/pasta do projeto
 
 npm start
 
+# Aplicação em teste
+
 ![todoCartoes](https://user-images.githubusercontent.com/30943675/73551902-09acff80-4426-11ea-9328-2bf3d3fca2cd.jpg)
