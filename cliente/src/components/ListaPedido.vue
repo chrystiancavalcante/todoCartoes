@@ -1,12 +1,12 @@
 <template>
-  <div class="overflow-auto" v-if="!items">
-    <template>
+  <div class="overflow-auto">
+
         <b-breadcrumb>Lista de presentes</b-breadcrumb>
-    </template>
 
-    <p class="mt-3">Página: {{ currentPage }}</p>
+    <p class="mt-3" v-if="products">Página: {{ currentPage }}</p>
 
-    <b-table 
+    <b-table
+      v-if="products" 
       id="my-table"
       ref="selectableTable"
       selectable
@@ -36,7 +36,11 @@
         </p>
       </template>
       </b-table>
+      <div class="text-center" v-else>
+        <div>Ainda não têm nenhum produto na lista</div>
+      </div>
     <b-pagination
+      v-if="products"
       v-model="currentPage"
       :total-rows="rows"
       align="right"
@@ -49,7 +53,9 @@
 import{ mapActions } from "vuex";
 export default {
 	name: "ListaPedido",
-	props:["products"],
+	props:{
+		products: Object
+	},
 	data() {
 		return {
 			modes: ["multi", "single"],
@@ -79,6 +85,3 @@ export default {
 	},
 };
 </script>
-<style scoped>
-
-</style>
