@@ -37,7 +37,7 @@
       </template>
       </b-table>
       <div class="text-center" v-else>
-        <div>Ainda não têm nenhum produto na lista</div>
+        <p>Ainda não têm nenhum produto na lista</p>
       </div>
     <b-pagination
       v-if="products"
